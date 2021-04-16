@@ -45,5 +45,10 @@ $(document).on('click', '#tinh', function(e) {
     alert('event click' + e.message);
      }
      })
+setInterval(function(){
+    document.write('welcome Ans asia!!!');
 
+}, 3000
+
+);
 
