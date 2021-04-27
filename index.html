@@ -24,15 +24,22 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item-separate">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item-separate">
                             Vao cua hang tren ung dung
-                            <div class="header_qr">
-                                <img src="assets/imgages/qrcode.png" class="header__qr-img" alt="">
+                            <div class="header__qr">
+                                <img src="assets/images/qrcode.png" class="header__qr-img" alt="">
                                 <div class="header__qr-apps">
-                                    <img src="assets/images/apple.png"
+                                    <a href="#" class="header__qr-link">
+                                        <img src="assets/images/google.png"
+                                        alt="" class="header_qr-download-img">
+                                       
+                                    </a>
+                                    
+                                     <a href="#" class="header__qr-link">
+                                        <img src="assets/images/apple.png"
                                      alt="" class="header_qr-download-img">
-                                     <img src="assets/images/google.png"
-                                     alt="" class="header_qr-download-img">
+                                    </a>
+                                     
                                 </div>
                             </div>
                         
@@ -48,10 +55,63 @@
                         </li>
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item-notify">
                             <a href="#" class="header__navbar-item-link">
                                 <i class=" header__navbar-icon fa fa-bell"></i>
                                 THong bao</a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thong bao moi</h3>
+                                </header>
+
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./assets/images/thongbao.png" alt="" class="header__notify-img">
+                                        </a>
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">
+                                                My pham Ohui ching hang
+                                            </span>
+                                            <span class="header__notify-description">
+                                                My pham Ohui ching hang
+
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./assets/images/thongbao.png" alt="" class="header__notify-img">
+                                        </a>
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">
+                                                My pham Ohui ching hang
+                                            </span>
+                                            <span class="header__notify-description">
+                                                My pham Ohui ching hang
+
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./assets/images/thongbao.png" alt="" class="header__notify-img">
+                                        </a>
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">
+                                                My pham Ohui ching hang
+                                            </span>
+                                            <span class="header__notify-description">
+                                                My pham Ohui ching hang
+
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <header class="header__notify--footer">
+                                    <a href="#" class="header__notify--btn">Xem tat ca</a>
+                                </header>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
                             <a href="#" class="header__navbar-item-link">Tro giup </a>
@@ -71,6 +131,121 @@
         <footer class="footer">
 
         </footer>
+    </div>
+
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+                <!-- <div class="auth-form">
+                    <div class="auth-from__container">
+                        <div class="auth-fom__header">
+                            <h3 class="auth-form__heading">
+                               Dang nhap
+                            </h3>
+                            <span class="auth-from__switch-btn">Dang nhap</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" placeholder="Nhap email" class="auth-form__input" />
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" placeholder="********" class="auth-form__input" />
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" placeholder="Nhap lai mat khau" class="auth-form__input" />
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bang viec dang ki, bang da dong y voi Shopee ve dieu khoan va dich vu
+                                <a href="#" class="auth-form__text-link">Dieu khoan dich vu</a>&
+                                <a href="#" class="auth-form__text-link">Chinh sach bao mat</a>
+                            </p>
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn--normal">
+                                Tro lai
+                            </button>
+                            <button class="btn btn--primary">
+                                Dang ky
+                            </button>
+    
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="auth-form__social">
+                        <a href="#" class= "auth-form__social-icon btn btn--size-s btn--with-icon auth-form__social-facebook"> 
+                            <i class="fa fa-facebook" aria-hidden="true"></i> 
+                            <span class="auth-form__social-title"> Ket noi voi facebook</span>
+                           
+                        </a>
+                        <a href="#" class= "auth-form__social-icon auth-form__social-google btn  btn--size-s btn--with-icon"> 
+                            <i class="fa fa-google" aria-hidden="true"></i>  <span class="auth-form__social-title"> Ket noi voi google</span></a>
+
+                    </div>
+                   
+              </div> -->
+
+              <!-- Login -->
+              <div class="auth-form">
+                <div class="auth-from__container">
+                    <div class="auth-fom__header">
+                        <h3 class="auth-form__heading">
+                           Dang nhap
+                        </h3>
+                        <span class="auth-from__switch-btn">Dang ky</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" placeholder="Nhap email" class="auth-form__input" />
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" placeholder="********" class="auth-form__input" />
+                        </div>
+
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="#" class="auth-form__help-link auth-form__help-forgot">Quen mat khau</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="#" class="auth-form__help-link">Can tro giup</a>
+
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">
+                            Tro lai
+                        </button>
+                        <button class="btn btn--primary">
+                            Dang ky
+                        </button>
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="auth-form__social">
+                    <a href="#" class= "auth-form__social-icon btn btn--size-s btn--with-icon auth-form__social-facebook"> 
+                        <i class="fa fa-facebook" aria-hidden="true"></i> 
+                        <span class="auth-form__social-title"> Dang nhap voi facebook</span>
+                       
+                    </a>
+                    <a href="#" class= "auth-form__social-icon auth-form__social-google btn  btn--size-s btn--with-icon"> 
+                        <i class="fa fa-google" aria-hidden="true"></i>  <span class="auth-form__social-title"> Dang nhap voi google</span></a>
+
+                </div>
+               
+          </div>
+        </div>
+
+
     </div>
 
 
